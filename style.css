@@ -1,0 +1,264 @@
+
+
+*{ margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+}
+.header{
+min-height: 100vh;
+width: 100%;
+background: #000;
+color: #fff;
+position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+.logo{
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 10%;
+}
+.nav-links{
+    text-align: right;
+    background: #ca3535;
+    padding: 10px 30px;
+    border-bottom-left-radius: 18px;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+.nav-links ul li a:hover{
+    color: #000;
+}
+.left-sidebar{
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #000;
+}
+.row{
+    padding: 0 10%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 1%;
+}
+.left-col{
+    flex-basis: 40%;
+}
+.right-col{
+    flex-basis: 55%;
+}
+.left-col img{
+    width: 80%;
+    cursor: pointer;
+    filter: grayscale(0);
+    transition: filter 1s;
+}
+.left-col img:hover{
+    filter: grayscale(1);
+}
+.right-col h1{
+    font-style: 55px;
+    font-weight: 600;
+}
+.right-col p{
+    color: #777;
+    margin: 20px 0 70px;
+}
+.social-media{
+    display: flex;
+    margin-top: 30px;
+}
+.icon{
+    width: 100px;
+    height: 100px;
+    background: #555;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: transform 0.5s;
+}
+.icon i{
+    width: 28px;
+}
+.icon a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ff1616;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+.icon a:hover{
+    opacity: 1;
+}
+.icon:hover{
+    transform: translateY(-5px);
+
+}
+
+/* Education Section */
+.education {
+
+    background-color: #000;
+    color: #fff;
+    padding: 60px 0;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-between;
+    
+}
+
+.level {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 20px;
+    background-color: #777;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    border-radius: 20px;
+
+    
+}
+
+.level h2 {
+    margin-top: 20px;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.level h3, .level h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+/* Skills Section */
+.skills {
+    background-color: #000;
+    color: #fff;
+    padding: 60px 0;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+
+}
+
+.skills h1{
+    color:red;
+    text-align: center;
+}
+.grid-skill {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin-top: 30px;
+}
+
+.grid-item {
+    padding: 20px;
+    background-color: #777;
+    border-radius: 6px;
+    text-align: center;
+    transition: transform 0.5s;
+}
+
+.level:hover , .grid-item:hover {
+    transform: translateY(-5px);
+    background-color: #ca3535;
+}
+
+.grid-item h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.grid-item h3 {
+    font-size: 20px;
+    color: #fff;
+    font-weight: normal;
+}
+
+/* Resume Section */
+.resume_cont {
+    background-color: #000;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.resume_img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    cursor: pointer;
+    filter: grayscale(0);
+    transition: filter 1s;
+}
+
+.resume_img:hover {
+    filter: grayscale(1);
+}
+
+.button {
+    margin-top: 30px;
+}
+
+.button a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff1616;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.5s;
+}
+
+.button a:hover {
+    background-color: #ca3535;
+}
+
